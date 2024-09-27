@@ -42,7 +42,7 @@ export const updateUser = async (clerkId: string, user:UpdateUserParams) => {
 
 // deleting part
 
-export const deletedUser = async (clerkId: string) => {
+export const deleteUser = async (clerkId: string) => {
     try {
         await connectToDatabase()
         const userToDelete = await User.findOne({clerkId});
